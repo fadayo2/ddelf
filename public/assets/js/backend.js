@@ -14,26 +14,26 @@ export async function initBackend(){
    client=lib.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:true,autoRefreshToken:true}});
    client.auth.onAuthStateChange((event,session)=>{user=session?.user||null;window.dispatchEvent(new CustomEvent('delf-auth-changed',{detail:user}));if(event==='PASSWORD_RECOVERY')window.dispatchEvent(new Event('delf-auth-recovery'));});
    const {data,error}=await client.auth.getUser();if(!error)user=data.user;
-  }catch(error){console.error(error);throw Error('Connexion Supabase impossible : '+error.message)}
+  }catch(error){console.error(error);throw Error('Unable to connect to Supabase: '+error.message)}
  }
  return {live:!!client,user};
 }
 const unwrap=({data,error})=>{if(error)throw Error(error.message);return data};
-export async function signIn(email,password){if(!client)throw Error('Configurez Supabase avant de vous connecter');const d=unwrap(await client.auth.signInWithPassword({email,password}));user=d.user;return d}
+export async function signIn(email,password){if(!client)throw Error('Connect a Supabase project before signing in');const d=unwrap(await client.auth.signInWithPassword({email,password}));user=d.user;return d}
 const authRedirect=flow=>new URL(`./index.html?auth=${flow}`,window.location.href).toString();
-export async function signUp(email,password){if(!client)throw Error('Configurez Supabase avant de vous inscrire');const d=unwrap(await client.auth.signUp({email,password,options:{emailRedirectTo:authRedirect('confirmed')}}));if(d.session){user=d.user;window.dispatchEvent(new CustomEvent('delf-auth-changed',{detail:user}))}return d;}
-export async function resendConfirmation(email){if(!client)throw Error('Connexion indisponible');return unwrap(await client.auth.resend({type:'signup',email,options:{emailRedirectTo:authRedirect('confirmed')}}));}
-export async function sendPasswordReset(email){if(!client)throw Error('Connexion indisponible');return unwrap(await client.auth.resetPasswordForEmail(email,{redirectTo:authRedirect('reset')}));}
-export async function updatePassword(password){if(!client)throw Error('Connexion indisponible');return unwrap(await client.auth.updateUser({password}));}
+export async function signUp(email,password){if(!client)throw Error('Connect a Supabase project before creating an account');const d=unwrap(await client.auth.signUp({email,password,options:{emailRedirectTo:authRedirect('confirmed')}}));if(d.session){user=d.user;window.dispatchEvent(new CustomEvent('delf-auth-changed',{detail:user}))}return d;}
+export async function resendConfirmation(email){if(!client)throw Error('Connection unavailable');return unwrap(await client.auth.resend({type:'signup',email,options:{emailRedirectTo:authRedirect('confirmed')}}));}
+export async function sendPasswordReset(email){if(!client)throw Error('Connection unavailable');return unwrap(await client.auth.resetPasswordForEmail(email,{redirectTo:authRedirect('reset')}));}
+export async function updatePassword(password){if(!client)throw Error('Connection unavailable');return unwrap(await client.auth.updateUser({password}));}
 export async function signOut(){if(client){unwrap(await client.auth.signOut());user=null}}
-const offlinePaper=async()=>{const res=await fetch('./assets/data/paper-1.json',{cache:'no-cache'});if(!res.ok)throw Error('Impossible de charger le sujet');return await res.json()};
+const offlinePaper=async()=>{const res=await fetch('./assets/data/paper-1.json',{cache:'no-cache'});if(!res.ok)throw Error('Unable to load the exam paper');return await res.json()};
 export async function getPapers(){
  if(!client)return (await offlinePaper()).exams;
  return unwrap(await client.from('exams').select('*').eq('published',true).order('created_at',{ascending:false}));
 }
 export async function getPaper(examId){
- if(!client){let d=await offlinePaper();if(!d.exams.some(x=>x.id===examId))throw Error('Sujet introuvable');return d}
- const exams=unwrap(await client.from('exams').select('*').eq('id',examId));if(!exams.length)throw Error('Sujet indisponible');
+ if(!client){let d=await offlinePaper();if(!d.exams.some(x=>x.id===examId))throw Error('Exam paper not found');return d}
+ const exams=unwrap(await client.from('exams').select('*').eq('id',examId));if(!exams.length)throw Error('Exam paper unavailable');
  const sections=unwrap(await client.from('sections').select('*').eq('exam_id',examId).order('position'));
  const exercises=unwrap(await client.from('exercises').select('*').in('section_id',sections.map(x=>x.id)).order('position'));
  const questions=unwrap(await client.from('questions').select('*').in('exercise_id',exercises.map(x=>x.id)).order('position'));
@@ -78,7 +78,7 @@ export async function getReview(attemptId){
 }
 export async function registerPlay(attemptId,assetId,mode,maxPlays){
  if(client)return unwrap(await client.rpc('register_audio_play',{p_attempt:attemptId,p_audio:assetId}));
- let value;updateLocal(s=>{let k=attemptId+':'+assetId;let n=s.plays[k]||0;if(mode==='premium'&&n>=maxPlays)throw Error('Les deux écoutes sont utilisées');
+ let value;updateLocal(s=>{let k=attemptId+':'+assetId;let n=s.plays[k]||0;if(mode==='premium'&&n>=maxPlays)throw Error('Both listening attempts have been used');
  s.plays[k]=n+1;value={plays:n+1,remaining:mode==='premium'?maxPlays-n-1:null}});return value;
 }
 export async function getPlayCounts(attemptId){
@@ -104,14 +104,14 @@ export async function getTeacherStatus(){
  if(error)return false;return !!data?.enabled;
 }
 export async function getTeacherAttempts(){
- if(!await getTeacherStatus())throw Error('Accès enseignant requis');
+ if(!await getTeacherStatus())throw Error('Teacher access required');
  return unwrap(await client.from('attempts').select('*').eq('status','completed').order('finished_at',{ascending:false}).limit(50));
 }
 export async function reviewObjective(attemptId,questionId,score){
- if(!await getTeacherStatus())throw Error('Accès enseignant requis');
+ if(!await getTeacherStatus())throw Error('Teacher access required');
  return unwrap(await client.rpc('teacher_review_answer',{p_attempt:attemptId,p_question:questionId,p_awarded:score}));
 }
 export async function reviewWriting(attemptId,questionId,scores,feedback,corrected){
- if(!await getTeacherStatus())throw Error('Accès enseignant requis');
+ if(!await getTeacherStatus())throw Error('Teacher access required');
  return unwrap(await client.rpc('teacher_review_writing',{p_attempt:attemptId,p_question:questionId,p_scores:scores,p_feedback:feedback,p_corrected:corrected}));
 }

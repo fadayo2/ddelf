@@ -37,14 +37,14 @@ def test():
   page.evaluate("window.authUI.initAuthUI({onSignedIn(){window.__signedIn=true}})")
   page.locator('#auth-open').evaluate('(e)=>e.classList.remove("hidden")')
   page.locator('#auth-open').click()
-  assert page.locator('#auth-title').inner_text()=='Heureux de vous revoir.'
+  assert page.locator('#auth-title').inner_text()=='Welcome back.'
   page.locator('[data-auth-tab="signup"]').click()
   page.locator('#signup-email').fill('learner@example.com')
   page.locator('#signup-password').fill('Abcdefg123!')
   page.locator('#signup-confirm').fill('Mismatch123!')
   page.locator('#auth-signup-submit').click()
-  page.wait_for_function('document.getElementById("auth-notice").textContent.includes("ne correspondent pas")',timeout=3000)
-  assert 'ne correspondent pas' in page.locator('#auth-notice').inner_text()
+  page.wait_for_function('document.getElementById("auth-notice").textContent.includes("do not match")',timeout=3000)
+  assert 'do not match' in page.locator('#auth-notice').inner_text()
   page.locator('[data-toggle-password="signup-password"]').click()
   assert page.locator('#signup-password').get_attribute('type')=='text'
   page.locator('#signup-confirm').fill('Abcdefg123!')
@@ -59,7 +59,7 @@ def test():
   page.locator('#signin-email').fill('learner@example.com')
   page.locator('#signin-password').fill('incorrect')
   page.locator('#auth-signin-submit').click()
-  page.wait_for_function('document.getElementById("auth-notice").textContent.includes("incorrect")',timeout=5000)
+  page.wait_for_function('document.getElementById("auth-notice").textContent.includes("Incorrect")',timeout=5000)
   page.locator('#signin-password').fill('correct-password')
   page.locator('#auth-signin-submit').click()
   page.wait_for_function('Boolean(window.__signedIn)')

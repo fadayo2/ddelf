@@ -4,12 +4,12 @@ import {toast,setButtonBusy} from './utils.js';
 const $=id=>document.getElementById(id);
 const views=['signin','signup','forgot','checkmail','reset','success'];
 const descriptions={
- signin:['Heureux de vous revoir.','Connectez-vous pour reprendre votre préparation.'],
- signup:['Créer votre compte.','Un seul compte pour retrouver vos copies sur tous vos appareils.'],
- forgot:['Mot de passe oublié ?','Entrez votre adresse e-mail pour recevoir un lien sécurisé.'],
- checkmail:['Encore une petite étape.','Vérifiez votre messagerie pour poursuivre.'],
- reset:['Choisir un nouveau mot de passe.','Votre nouveau mot de passe doit comporter au moins 8 caractères.'],
- success:['Tout est prêt !','Votre accès à delfA2 est disponible.']
+ signin:['Welcome back.','Sign in to continue your preparation.'],
+ signup:['Create your account.','Use one account to access your work on all your devices.'],
+ forgot:['Forgot your password?','Enter your email address to receive a secure reset link.'],
+ checkmail:['One more step.','Check your inbox to continue.'],
+ reset:['Choose a new password.','Your new password must contain at least 8 characters.'],
+ success:['You’re all set!','Your ddelf account is ready.']
 };
 let view='signin',busy=false,returnFocus=null,pendingEmail='',mailType='signup',afterSignIn=null;
 const getFirstField=kind=>$(`auth-${kind}`)?.querySelector('input:not([type=hidden])');
@@ -49,12 +49,12 @@ export function closeAuth(force=false){
 function friendlyError(error){
  const message=String(error?.message||'').toLowerCase();
  if(/email not confirmed/.test(message))$('auth-confirm-help')?.classList.remove('hidden');
- if(/invalid login|invalid credentials|email not confirmed/.test(message))return /not confirmed/.test(message)?'Veuillez confirmer votre adresse e-mail avant de vous connecter.':'Adresse e-mail ou mot de passe incorrect.';
- if(/rate limit|too many|over_email_send_rate_limit/.test(message))return 'Trop de tentatives. Réessayez dans quelques minutes.';
- if(/password should be|weak password|least 6/.test(message))return 'Choisissez un mot de passe plus solide.';
- if(/user already registered|already registered/.test(message))return 'Un compte existe déjà avec cette adresse. Essayez de vous connecter.';
- if(/network|fetch|failed to fetch|timeout/.test(message))return 'Connexion interrompue. Vérifiez Internet, puis réessayez.';
- return error?.message||'Une erreur est survenue. Veuillez réessayer.';
+ if(/invalid login|invalid credentials|email not confirmed/.test(message))return /not confirmed/.test(message)?'Please confirm your email address before signing in.':'Incorrect email address or password.';
+ if(/rate limit|too many|over_email_send_rate_limit/.test(message))return 'Too many attempts. Please try again in a few minutes.';
+ if(/password should be|weak password|least 6/.test(message))return 'Please choose a stronger password.';
+ if(/user already registered|already registered/.test(message))return 'An account already exists with this email address. Try signing in.';
+ if(/network|fetch|failed to fetch|timeout/.test(message))return 'Connection interrupted. Check your internet connection and try again.';
+ return error?.message||'Something went wrong. Please try again.';
 }
 function validate(form){
  if(!form.checkValidity()){form.reportValidity();return false}return true;
@@ -70,14 +70,14 @@ function strength(){
  const value=$('signup-password').value;
  let n=0;if(value.length>=8)n++;if(/[a-z]/.test(value)&&/[A-Z]/.test(value))n++;if(/\d/.test(value))n++;if(/[^a-zA-Z0-9]/.test(value))n++;
  document.querySelectorAll('.auth-strength span').forEach((bar,i)=>{bar.classList.toggle('filled',i<n);bar.dataset.level=n<=1?'low':n===2?'medium':'good'});
- $('auth-strength-label').textContent=value?(n<=1?'À renforcer : utilisez des lettres, des chiffres et des symboles.':n===2?'Bon début. Ajoutez un mélange de caractères.':'Mot de passe plus solide.'): 'Au moins 8 caractères ; lettres, chiffres et symboles recommandés.';
+ $('auth-strength-label').textContent=value?(n<=1?'Needs improvement: use a mix of letters, numbers and symbols.':n===2?'Good start. Add a wider mix of characters.':'Stronger password.'): 'At least 8 characters. A mix of letters, numbers and symbols is recommended.';
 }
 function checkPasswords(a,b){
- if(a!==b){setMessage('Les mots de passe ne correspondent pas.','error');return false}
+ if(a!==b){setMessage('The passwords do not match.','error');return false}
  return true;
 }
 function successHandler(){
- closeAuth(true);toast('Bienvenue dans votre espace delfA2.');
+ closeAuth(true);toast('Welcome to your ddelf account.');
  afterSignIn?.();
 }
 function cleanAuthQuery(){
@@ -105,23 +105,23 @@ export function initAuthUI({onSignedIn}={}){
  document.querySelectorAll('[data-auth-tab]').forEach(btn=>btn.addEventListener('click',()=>toggleForm(btn.dataset.authTab)));
  document.querySelectorAll('[data-auth-view]').forEach(btn=>btn.addEventListener('click',()=>toggleForm(btn.dataset.authView)));
  document.querySelectorAll('[data-toggle-password]').forEach(btn=>btn.addEventListener('click',()=>{
-  const target=$(btn.dataset.togglePassword),revealed=target.type==='password';target.type=revealed?'text':'password';btn.textContent=revealed?'Masquer':'Afficher';btn.setAttribute('aria-pressed',String(revealed));btn.setAttribute('aria-label',revealed?'Masquer le mot de passe':'Afficher le mot de passe');target.focus();
+  const target=$(btn.dataset.togglePassword),revealed=target.type==='password';target.type=revealed?'text':'password';btn.textContent=revealed?'Hide':'Show';btn.setAttribute('aria-pressed',String(revealed));btn.setAttribute('aria-label',revealed?'Hide password':'Show password');target.focus();
  }));
  $('signup-password').addEventListener('input',strength);
  $('auth-confirm-help')?.addEventListener('click',()=>{
   const email=emailValue('signin');if(!email||!$('signin-email').checkValidity()){$('signin-email').reportValidity();return}
   pendingEmail=email;mailType='signup';
-  perform($('auth-confirm-help'),'Envoi du lien…',async()=>{await db.resendConfirmation(email);toggleForm('checkmail')});
+  perform($('auth-confirm-help'),'Sending link…',async()=>{await db.resendConfirmation(email);toggleForm('checkmail')});
  });
  $('auth-signin').addEventListener('submit',e=>{e.preventDefault();const form=e.currentTarget;if(!validate(form))return;
-  perform($('auth-signin-submit'),'Connexion en cours…',async()=>{
+  perform($('auth-signin-submit'),'Signing in…',async()=>{
    await db.signIn(emailValue('signin'),$('signin-password').value);
    successHandler();
   });
  });
  $('auth-signup').addEventListener('submit',e=>{e.preventDefault();const form=e.currentTarget;if(!validate(form))return;
   const pass=$('signup-password').value;if(!checkPasswords(pass,$('signup-confirm').value))return;
-  perform($('auth-signup-submit'),'Création du compte…',async()=>{
+  perform($('auth-signup-submit'),'Creating account…',async()=>{
    pendingEmail=emailValue('signup');
    const data=await db.signUp(pendingEmail,pass);
    if(data.session){successHandler();return}
@@ -129,24 +129,24 @@ export function initAuthUI({onSignedIn}={}){
   });
  });
  $('auth-forgot').addEventListener('submit',e=>{e.preventDefault();const form=e.currentTarget;if(!validate(form))return;
-  perform(form.querySelector('[type=submit]'),'Envoi du lien…',async()=>{
+  perform(form.querySelector('[type=submit]'),'Sending link…',async()=>{
    pendingEmail=emailValue('forgot');await db.sendPasswordReset(pendingEmail);
    mailType='reset';toggleForm('checkmail');
   });
  });
  $('auth-reset').addEventListener('submit',e=>{e.preventDefault();const form=e.currentTarget;if(!validate(form))return;
   const password=$('reset-password').value;if(!checkPasswords(password,$('reset-confirm').value))return;
-  perform(form.querySelector('[type=submit]'),'Enregistrement…',async()=>{
+  perform(form.querySelector('[type=submit]'),'Saving…',async()=>{
    await db.updatePassword(password);
    toggleForm('success');cleanAuthQuery();
   });
  });
  $('auth-resend').addEventListener('click',()=>{
   if(!pendingEmail)return;
-  perform($('auth-resend'),'Envoi en cours…',async()=>{
+  perform($('auth-resend'),'Sending…',async()=>{
    if(mailType==='signup')await db.resendConfirmation(pendingEmail);
    else await db.sendPasswordReset(pendingEmail);
-   setMessage('E-mail renvoyé. Vérifiez votre messagerie et le dossier spam.','success');
+   setMessage('Email sent again. Check your inbox and spam folder.','success');
   });
  });
  window.addEventListener('delf-auth-recovery',()=>{if(db.isLive())openAuth('reset')});
@@ -156,10 +156,10 @@ export function handleAuthCallback(){
  const flow=new URLSearchParams(location.search).get('auth');if(!flow)return;
  if(flow==='reset'){
   if(db.currentUser())openAuth('reset');
-  else openAuth('forgot','Le lien de réinitialisation est expiré ou invalide. Demandez un nouveau lien.');
+  else openAuth('forgot','This password-reset link has expired or is invalid. Request a new link.');
  }else if(flow==='confirmed'){
-  if(db.currentUser())toast('Adresse e-mail confirmée. Bienvenue !');
-  else openAuth('signin','Votre adresse est confirmée. Connectez-vous pour continuer.');
+  if(db.currentUser())toast('Email confirmed. Welcome!');
+  else openAuth('signin','Your email is confirmed. Sign in to continue.');
   cleanAuthQuery();
  }
 }

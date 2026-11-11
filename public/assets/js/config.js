@@ -1,4 +1,4 @@
-/** Public Supabase project configuration for delfA2.
+/** Public Supabase project configuration for ddelf.
  * This is a publishable key, NEVER a service-role or secret key.
  */
 export const SUPABASE_URL = 'https://jubhfdtkutkndjrgcuuv.supabase.co';

@@ -28,15 +28,15 @@ async function main(){
  window.addEventListener('delf-auth-required',event=>{pendingStart=event.detail?.start||null});
  window.addEventListener('delf-auth-dismissed',()=>{pendingStart=null});
  byId('logout-button')?.addEventListener('click',async e=>{
-  const restore=setButtonBusy(e.currentTarget,true,'Déconnexion…');
+  const restore=setButtonBusy(e.currentTarget,true,'Signing out…');
   try{await db.signOut();location.href='./index.html'}catch(error){restore();toast(error.message,'error')}
  });
- const titles={index:'Préparation de votre accueil…',dashboard:'Chargement de vos examens…',exam:'Chargement de votre épreuve…',results:'Calcul de vos résultats…',history:'Chargement de votre progression…',teacher:'Chargement de l’espace enseignant…'};
- pageLoading(page,'Connexion à votre espace…');
+ const titles={index:'Preparing your home page…',dashboard:'Loading your exam papers…',exam:'Loading your exam section…',results:'Calculating your results…',history:'Loading your progress…',teacher:'Loading the teacher space…'};
+ pageLoading(page,'Connecting to your account…');
  try{
   await db.initBackend();refreshHeader();handleAuthCallback();
   if(db.requiresAuth()&&guardedPages.has(page)){
-   byId('app').innerHTML='<div class="container auth-required-layout"><div class="panel auth-required-card"><span class="auth-required-mark">🔒</span><span class="eyebrow">ESPACE PERSONNEL</span><h1 class="h2 mt-3">Connectez-vous pour continuer</h1><p class="muted mt-3">Vos examens, réponses et résultats sont protégés. Connectez-vous ou créez un compte pour reprendre exactement où vous en étiez.</p><button class="btn btn-primary mt-5" id="auth-required">Continuer avec mon compte →</button><a href="./index.html" class="auth-back mt-3">Revenir à l’accueil</a></div></div>';
+   byId('app').innerHTML='<div class="container auth-required-layout"><div class="panel auth-required-card"><span class="auth-required-mark">🔒</span><span class="eyebrow">YOUR ACCOUNT</span><h1 class="h2 mt-3">Sign in to continue</h1><p class="muted mt-3">Your exam papers, answers and results are protected. Sign in or create an account to pick up where you left off.</p><button class="btn btn-primary mt-5" id="auth-required">Continue with your account →</button><a href="./index.html" class="auth-back mt-3">Return home</a></div></div>';
    byId('auth-required').onclick=()=>openAuth('signin');return;
   }
   pageLoading(page,titles[page]||'Chargement…');
@@ -48,7 +48,7 @@ async function main(){
   else if(page==='teacher')await teacherPage();
  }catch(e){
   console.error(e);
-  byId('app').innerHTML=`<section class="container auth-required-layout"><div class="panel auth-required-card"><h2 class="h2">Impossible de charger cette page</h2><p class="muted mt-3">${escapeHtml(e.message)}</p><div class="flex gap-3 mt-5 flex-wrap"><button class="btn btn-primary" id="retry-load">Réessayer</button><a href="./index.html" class="btn btn-light">Retour à l’accueil</a></div></div></section>`;
+  byId('app').innerHTML=`<section class="container auth-required-layout"><div class="panel auth-required-card"><h2 class="h2">Unable to load this page</h2><p class="muted mt-3">${escapeHtml(e.message)}</p><div class="flex gap-3 mt-5 flex-wrap"><button class="btn btn-primary" id="retry-load">Try again</button><a href="./index.html" class="btn btn-light">Return home</a></div></div></section>`;
   byId('retry-load').onclick=()=>location.reload();
  }
 }

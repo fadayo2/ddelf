@@ -1,6 +1,8 @@
-# delfA2 — DELF A2 Tout Public examination simulator
+# ddelf — DELF A2 Tout Public examination simulator
 
-A responsive HTML5 + Tailwind CSS v4 + vanilla JavaScript exam simulator, backed by Supabase PostgreSQL, Auth and Storage.
+A responsive HTML5 + Tailwind CSS v4 + vanilla JavaScript DELF A2 simulator, backed by Supabase PostgreSQL, Auth and Storage.
+
+**Interface language:** English. **Exam language:** French. Official exam prompts, answer options, source texts, audio and candidate instructions are preserved in French exactly as supplied; only application navigation, account screens, help labels, results layout and teacher tools use English.
 
 ## Source overview
 
@@ -9,7 +11,7 @@ One uploaded exam paper contains 3 listening exercises, 4 reading exercises and 
 ## Project layout
 
 ```text
-delfA2/
+ddelf/
 ├── public/                      <-- only this folder is published
 │   ├── index.html               Landing / Standard & Premium modes
 │   ├── dashboard.html           Papers / current and past attempts
@@ -47,11 +49,11 @@ Use the deployed Supabase mode for persistent attempts, scoring, feedback and te
 
 ## 2. Connected Supabase project and remaining setup
 
-The frontend is now configured to use the dedicated, active **delfA2** Supabase project (`jubhfdtkutkndjrgcuuv`) at `https://jubhfdtkutkndjrgcuuv.supabase.co`. It uses the **publishable key**, not a privileged credential. This changes only the local frontend config; the cloud database is **not yet provisioned**. At the time of connection, no application tables existed.
+The frontend is now configured to use the dedicated, active **ddelf** Supabase project (`jubhfdtkutkndjrgcuuv`) at `https://jubhfdtkutkndjrgcuuv.supabase.co`. It uses the **publishable key**, not a privileged credential. This changes only the local frontend config; the cloud database is **not yet provisioned**. At the time of connection, no application tables existed.
 
-Do **not** run these SQL files on ParlonsMoi or any other project. Run them in the [delfA2 project SQL Editor](https://supabase.com/dashboard/project/jubhfdtkutkndjrgcuuv/sql/new).
+Do **not** run these SQL files on ParlonsMoi or any other project. Run them in the [ddelf project SQL Editor](https://supabase.com/dashboard/project/jubhfdtkutkndjrgcuuv/sql/new).
 
-1. In the **delfA2** project's **SQL Editor**, run `supabase/schema.sql` in its entirety, then `supabase/seed.sql`.
+1. In the **ddelf** project's **SQL Editor**, run `supabase/schema.sql` in its entirety, then `supabase/seed.sql`.
 2. In Supabase **Authentication > Providers**, enable Email (and configure any desired email verification). Add your public site URL to the Authentication URL configuration.
 3. Confirm that the private Storage bucket `delf-audio` was created. Upload the three `public/assets/audio/exercice-[1-3].mp3` files without renaming them. You can use Storage's dashboard upload or the trusted helper below.
 4. Run `supabase/verify.sql` in the SQL Editor. It checks the expected counts, points, RLS flags and audio presence.
@@ -163,6 +165,6 @@ https://YOUR-SITE.vercel.app/index.html?auth=confirmed
 https://YOUR-SITE.vercel.app/index.html?auth=reset
 ```
 
-Set the **Site URL** to the production site. Use your *real* hostname. If preview deployments need email login, add an appropriate approved preview URL pattern as well. This is necessary for email confirmation and recovery links to return to delfA2. The frontend uses only your project's public publishable key; do not add a service-role key to it.
+Set the **Site URL** to the production site. Use your *real* hostname. If preview deployments need email login, add an appropriate approved preview URL pattern as well. This is necessary for email confirmation and recovery links to return to ddelf. The frontend uses only your project's public publishable key; do not add a service-role key to it.
 
 Browser-simulated auth tests are in `tests/auth_isolated_smoke.py`. These test the modal, form states and asynchronous buttons without making real email requests. **Live email delivery, Auth URL allowlist behavior, and real session persistence still require final tests on the deployment domain.**

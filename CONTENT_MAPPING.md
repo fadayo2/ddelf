@@ -1,6 +1,6 @@
-# delfA2 — Source mapping and fidelity report
+# ddelf — Source mapping and fidelity report
 
-**Primary source:** `delfa2exam.pdf` (20 pages), plus the three user-provided MP3 recordings. No substitute questions, audio, or answer keys were invented.
+**Primary source:** `ddelfexam.pdf` (20 pages), plus the three user-provided MP3 recordings. No substitute questions, audio, or answer keys were invented.
 
 ## PDF components
 
@@ -56,3 +56,8 @@ No entire listening/reading question or answer key was missing in the supplied p
 - Writing Ex. 2: Philippe's letter from page 9: `assets/img/writing-letter.png`.
 
 Images were cropped strictly from the candidate-paper pages (never correction pages). The source text is available via an optional text disclosure for accessibility when the image also contains the full text. The reader has an optional fullscreen viewer with zoom, fit and Escape to close. Each writing textarea has an interactive French accent keyboard; insertion dispatches an input event and therefore uses existing autosave and word counting.
+
+
+## Language handling
+
+The ddelf application interface is in English. The supplied DELF A2 examination material remains in French: question wording, answer options, source texts, audio recordings and official exercise instructions are not translated or rewritten.

@@ -1,8 +1,8 @@
 {
-  "name": "delfa2",
+  "name": "ddelf",
   "version": "1.0.0",
   "private": true,
-  "description": "DELF A2 training and timed simulation with Supabase",
+  "description": "English-language DELF A2 preparation and timed simulation with Supabase",
   "scripts": {
     "test": "node --test tests/content.test.mjs",
     "build:css": "node scripts/build-tailwind.mjs"

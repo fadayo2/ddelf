@@ -298,15 +298,15 @@ begin
   v_score=least(v_max,greatest(0,round(v_score*2)/2));
   v_total=v_total+v_score;v_scores=v_scores||jsonb_build_object(v_code,v_score);
  end loop;
- if v_n<60 then v_messages=v_messages||jsonb_build_array('Texte trop court : '||v_n||' mots. La consigne demande 60 à 80 mots.');end if;
- if v_n>80 then v_messages=v_messages||jsonb_build_array('Texte trop long : '||v_n||' mots. Visez 60 à 80 mots.');end if;
- if not v_has_task then v_messages=v_messages||jsonb_build_array('Plusieurs éléments demandés par la consigne ne sont pas clairement repérés. Vérifiez chaque point.');end if;
- if not v_has_link then v_messages=v_messages||jsonb_build_array('Ajoutez des connecteurs simples : puis, ensuite, mais, parce que.');end if;
- if v_ex_pos=1 and not v_has_impressions then v_messages=v_messages||jsonb_build_array('Indiquez vos impressions personnelles sur la vie à Paris.');end if;
+ if v_n<60 then v_messages=v_messages||jsonb_build_array('Your text is too short: '||v_n||' words. The task requires 60–80 words.');end if;
+ if v_n>80 then v_messages=v_messages||jsonb_build_array('Your text is too long: '||v_n||' words. Aim for 60–80 words.');end if;
+ if not v_has_task then v_messages=v_messages||jsonb_build_array('Some required task elements are not clearly addressed. Check each point.');end if;
+ if not v_has_link then v_messages=v_messages||jsonb_build_array('Add simple French linking words such as puis, ensuite, mais and parce que.');end if;
+ if v_ex_pos=1 and not v_has_impressions then v_messages=v_messages||jsonb_build_array('Describe your personal impressions of life in Paris.');end if;
  v_corrected=regexp_replace(v_b,'\mj''ai visiter\M','j''ai visité','gi');
  v_corrected=regexp_replace(v_corrected,'\mj''ai manger\M','j''ai mangé','gi');
- if v_corrected<>v_b then v_messages=v_messages||jsonb_build_array('Quelques formes verbales fréquentes ont été corrigées automatiquement dans la version proposée.');
- else v_messages=v_messages||jsonb_build_array('Aucune correction grammaticale certaine détectée par les règles intégrées. Le texte proposé est identique ; une relecture humaine reste nécessaire.');end if;
+ if v_corrected<>v_b then v_messages=v_messages||jsonb_build_array('Some common verb forms have been automatically corrected in the suggested version.');
+ else v_messages=v_messages||jsonb_build_array('The built-in rules did not detect any definite grammar corrections. The suggested text is unchanged; a human review is still recommended.');end if;
  return jsonb_build_object('score',v_total,'criterion_scores',v_scores,'feedback',v_messages,'corrected_text',v_corrected,'word_count',v_n);
 end $$;
 
