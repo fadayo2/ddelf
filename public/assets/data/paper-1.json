@@ -1,0 +1,1457 @@
+{
+  "exams": [
+    {
+      "id": "edb1af0a-877e-542c-a23b-d3bfcebb4000",
+      "title": "DELF A2 Tout Public — Exemple 1",
+      "code": "sample-1",
+      "source_name": "delfa2exam.pdf",
+      "published": true
+    }
+  ],
+  "sections": [
+    {
+      "id": "655216e8-de25-5824-807e-8f1d679142b9",
+      "exam_id": "edb1af0a-877e-542c-a23b-d3bfcebb4000",
+      "kind": "listening",
+      "position": 1,
+      "duration_seconds": 1500,
+      "max_score": 25,
+      "instructions": "Vous allez entendre 3 enregistrements, correspondant à 3 documents différents. Pour chaque document, vous aurez : 30 secondes pour lire les questions ; une première écoute, puis 30 secondes de pause pour commencer à répondre aux questions ; une deuxième écoute, puis 30 secondes de pause pour compléter vos réponses. Répondez aux questions en cochant la bonne réponse, ou en écrivant l’information demandée."
+    },
+    {
+      "id": "a98146a5-3a28-5883-8ffe-14666589b141",
+      "exam_id": "edb1af0a-877e-542c-a23b-d3bfcebb4000",
+      "kind": "reading",
+      "position": 2,
+      "duration_seconds": 1800,
+      "max_score": 25,
+      "instructions": "Répondez aux questions en cochant la bonne réponse, ou en écrivant l’information demandée."
+    },
+    {
+      "id": "493246bb-8b94-5671-b933-038e5de20ac7",
+      "exam_id": "edb1af0a-877e-542c-a23b-d3bfcebb4000",
+      "kind": "writing",
+      "position": 3,
+      "duration_seconds": 2700,
+      "max_score": 25,
+      "instructions": "Rédigez les deux productions écrites (60 à 80 mots chacune)."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "8c86d69a-850c-5f5f-82e1-dd02c805b4c4",
+      "section_id": "655216e8-de25-5824-807e-8f1d679142b9",
+      "position": 1,
+      "title": "Exercice 1",
+      "points": 5,
+      "instructions": "› Première partie de l’enregistrement, puis deuxième partie.",
+      "context": "",
+      "image_path": null
+    },
+    {
+      "id": "ce683d5e-aad7-545e-9673-fb7de6d00327",
+      "section_id": "655216e8-de25-5824-807e-8f1d679142b9",
+      "position": 2,
+      "title": "Exercice 2",
+      "points": 8,
+      "instructions": "Répondez aux questions en cochant la bonne réponse.",
+      "context": "",
+      "image_path": null
+    },
+    {
+      "id": "bf71a612-7fe4-5572-8fcc-a433f9819ce3",
+      "section_id": "655216e8-de25-5824-807e-8f1d679142b9",
+      "position": 3,
+      "title": "Exercice 3",
+      "points": 12,
+      "instructions": "Vrai, faux, on ne sait pas ? Cochez la case correspondante.",
+      "context": "",
+      "image_path": null
+    },
+    {
+      "id": "fe32875a-ab53-5e15-8ffe-ce9600f8109f",
+      "section_id": "a98146a5-3a28-5883-8ffe-14666589b141",
+      "position": 1,
+      "title": "Exercice 1",
+      "points": 5,
+      "instructions": "Pour les phrases 1 à 5, indiquez dans le tableau la lettre correspondante.",
+      "context": "",
+      "image_path": "assets/img/reading-signs.png"
+    },
+    {
+      "id": "f92e4797-7d82-5719-8599-20d537fbac29",
+      "section_id": "a98146a5-3a28-5883-8ffe-14666589b141",
+      "position": 2,
+      "title": "Exercice 2",
+      "points": 6,
+      "instructions": "Lisez chaque titre et inscrivez le chiffre qui lui correspond dans la rubrique appropriée : politique, culture, société, sciences, sports, économie.",
+      "context": "1. Le chef du gouvernement appelle à des élections anticipées\n2. Avec 5 732 personnes tuées, la mortalité sur les routes françaises a diminué de 21 % en 2003\n3. Les exportations de cacao ont doublé par rapport à l’année dernière\n4. La Méditerranée envahie par une nouvelle algue tropicale\n5. La gratuité fait recette dans les musées de Paris\n6. Marseille en tête du championnat de France",
+      "image_path": null
+    },
+    {
+      "id": "4905fa7e-8e61-57cc-ae1c-c272e3ffa874",
+      "section_id": "a98146a5-3a28-5883-8ffe-14666589b141",
+      "position": 3,
+      "title": "Exercice 3",
+      "points": 9,
+      "instructions": "Lisez le texte puis répondez aux questions. Pour les questions 3 à 7, cochez Vrai ou Faux et justifiez par une phrase ou une expression du texte.",
+      "context": "À Visan, les touristes vont à la ferme\n\nPas un villageois n’y échappe. « La ferme » de TF1, est aujourd’hui le principal sujet de discussion à Visan (Vaucluse), du salon de coiffure à la boulangerie. C’est dans ce village de 1638 habitants que sont implantés les locaux de la nouvelle émission de téléréalité. Une vingtaine de célébrités sont enfermées dans une ferme pour y travailler.\n\nAu village, il y a les pour et les contre. Mais les enthousiastes sont les plus nombreux. Au café, le patron allume la télé à l’heure de l’émission : « Les clients la regardent, chacun y va de son commentaire. Souvent, des passants nous demandent où est située la ferme. » Des passants parfois envahissants : 400 voitures ont débarqué le lundi de Pâques. « Je n’avais jamais vu autant de monde à Visan », confie Claude, agriculteur.\n\nCertains bénéficient déjà de retombées économiques, comme Géraldine, la boulangère : « On fournit de 30 à 80 baguettes par jour à la production, c’est rentable. » Théo, de la cave de Visan, livre à la ferme entre 50 et 60 bouteilles tous les dix jours : « Nous sommes dans une région viticole. Si seulement 10 % des téléspectateurs retiennent que les célébrités boivent du vin de chez nous, on aura réussi. »\n\nD’autres sont plus critiques. Raphaël, aide-soignant, espérait « que “ La ferme ” donnerait une meilleure image de Visan. Mais les journalistes nous snobent et nous étiquettent “ paysans ”. Vivement que tout soit fini, que le village redevienne ce qu’il était. » Il ne reste donc plus qu’à attendre. Attendre de retrouver la tranquillité pour certains, attendre les retombées financières pour d’autres.\n\n20 Minutes, jeudi 29 avril 2004\n\n*implantés : installés ; *envahissants : trop nombreux ; *retombées : impact, conséquences ; *snober : se sentir supérieur à quelqu’un",
+      "image_path": null
+    },
+    {
+      "id": "b209b726-c929-5cbb-b8ad-95abf7c5c5b2",
+      "section_id": "a98146a5-3a28-5883-8ffe-14666589b141",
+      "position": 4,
+      "title": "Exercice 4",
+      "points": 5,
+      "instructions": "Vous venez de recevoir ce message sur votre ordinateur. Répondez aux questions.",
+      "context": "De : infos@aventureglobale.com\nObjet : Vous aimez les voyages ?\n\nVous aimez les voyages ? Vous aimez l’aventure ? Alors, lisez ce message !\n\nAVENTURE GLOBALE vous invite à faire le tour du monde en bateau, à bord d’un magnifique voilier. La mer des Caraïbes, les plages du Pacifique Sud et les mythiques îles de la Méditerranée vous attendent ! N’hésitez plus et prenez contact avec nous, vous allez vivre l’expérience la plus inoubliable de votre vie.\n\nEnregistrez-vous immédiatement et participez à notre grand tirage au sort « la croisière de vos rêves ». Vous recevrez sans obligation d’achat notre catalogue de voyages à des prix sans concurrence.\n\nSi vous êtes intéressé, cliquez ici.",
+      "image_path": "assets/img/reading-email.png"
+    },
+    {
+      "id": "2b5577f9-4d2c-537b-ad4d-b4be091b2977",
+      "section_id": "493246bb-8b94-5671-b933-038e5de20ac7",
+      "position": 1,
+      "title": "Exercice 1",
+      "points": 13,
+      "instructions": "Écrivez un texte de 60 à 80 mots.",
+      "context": "",
+      "image_path": "assets/img/writing-paris.png"
+    },
+    {
+      "id": "bbb31069-fdf2-5641-851c-448a96be7613",
+      "section_id": "493246bb-8b94-5671-b933-038e5de20ac7",
+      "position": 2,
+      "title": "Exercice 2",
+      "points": 12,
+      "instructions": "Écrivez un texte de 60 à 80 mots.",
+      "context": "Paris, le 6 mai 2004\n\nSalut,\n\nLes vacances approchent et j’aimerais bien te voir ! Je sais que tu ne connais pas Paris alors je te propose de venir passer quelques jours chez moi. Visite des musées, tour Eiffel, théâtres, cinés, bons restaurants...\n\nRéponds-moi vite et fais ta réservation pour venir.\n\nSi tu veux tu peux aussi m’appeler ; je suis chez moi vers 20 h 30.\n\nJe t’embrasse\nPhilippe",
+      "image_path": "assets/img/writing-letter.png"
+    }
+  ],
+  "questions": [
+    {
+      "id": "4942789b-1cad-5a53-bd2f-e5fdfeafdee5",
+      "exercise_id": "8c86d69a-850c-5f5f-82e1-dd02c805b4c4",
+      "position": 1,
+      "prompt": "Vous téléphonez au théâtre « Molière » et vous entendez le message suivant sur le répondeur. Sur quelle touche appuyez-vous pour réserver des places ?",
+      "points": 1,
+      "type": "short",
+      "options": [],
+      "image_path": null
+    },
+    {
+      "id": "ad27d8c2-bfe0-5377-88e9-4bdee97b3a47",
+      "exercise_id": "8c86d69a-850c-5f5f-82e1-dd02c805b4c4",
+      "position": 2,
+      "prompt": "Le week-end, vous pouvez réserver pour l’après-midi ou en soirée.",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "5948e9c0-9c01-5182-80b6-ec173c981dfc",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "64c931ff-9000-5811-9248-5e2a2771cec4",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        },
+        {
+          "id": "d72410f9-f0ff-5dcd-9919-0a1a58ee8f76",
+          "value": "inconnu",
+          "label": "On ne sait pas",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "1c07c4dd-03b6-5b33-a1f9-1cb29800150f",
+      "exercise_id": "8c86d69a-850c-5f5f-82e1-dd02c805b4c4",
+      "position": 3,
+      "prompt": "Les billets les moins chers sont à :",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "636a96e7-e583-5668-8133-8aafc20e045e",
+          "value": "1",
+          "label": "quinze euros.",
+          "position": 1
+        },
+        {
+          "id": "dcc357b9-2530-582d-923d-960705b9466b",
+          "value": "2",
+          "label": "vingt euros.",
+          "position": 2
+        },
+        {
+          "id": "fe10c5d6-90bb-56e5-a432-8eefa39cc394",
+          "value": "3",
+          "label": "trente euros.",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "29f15481-bc19-53b1-b29f-3c6f97c352fb",
+      "exercise_id": "ce683d5e-aad7-545e-9673-fb7de6d00327",
+      "position": 1,
+      "prompt": "Vous venez d’entendre :",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "7b403746-f528-522e-8916-7f641166f67f",
+          "value": "1",
+          "label": "un message sur un répondeur téléphonique.",
+          "position": 1
+        },
+        {
+          "id": "cfe62483-1fbc-5028-bc13-0b9eab6ca685",
+          "value": "2",
+          "label": "un flash d’information à la radio.",
+          "position": 2
+        },
+        {
+          "id": "2b73e52f-f981-54f7-a0ce-533f8b6dbddd",
+          "value": "3",
+          "label": "une publicité à la radio.",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "2e2c1d5d-3636-5136-a287-cb5f3e7d0cb6",
+      "exercise_id": "ce683d5e-aad7-545e-9673-fb7de6d00327",
+      "position": 2,
+      "prompt": "Le thème principal de ce document est :",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "19ad501f-66c1-5cb7-aff0-e8d3fe920b45",
+          "value": "1",
+          "label": "Illustration 1",
+          "position": 1
+        },
+        {
+          "id": "b85a2f80-da79-5381-97dc-b74cc9023564",
+          "value": "2",
+          "label": "Illustration 2",
+          "position": 2
+        },
+        {
+          "id": "48f87efc-9116-53c4-8a89-272ff254d5b0",
+          "value": "3",
+          "label": "Illustration 3",
+          "position": 3
+        }
+      ],
+      "image_path": "assets/img/listening-pictures.png"
+    },
+    {
+      "id": "cc0acdd5-4727-5bae-90a9-acece491975d",
+      "exercise_id": "ce683d5e-aad7-545e-9673-fb7de6d00327",
+      "position": 3,
+      "prompt": "Le prix du litre de super sera :",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "aa4b4c61-9ab9-5e43-ad8a-5996773cb99d",
+          "value": "1,20",
+          "label": "1,20 €",
+          "position": 1
+        },
+        {
+          "id": "a798db60-733a-5c7f-83ca-4b5eb6c8fee7",
+          "value": "1,30",
+          "label": "1,30 €",
+          "position": 2
+        },
+        {
+          "id": "a4cda213-a532-58e4-84fe-65e2e6c49ef5",
+          "value": "1,50",
+          "label": "1,50 €",
+          "position": 3
+        },
+        {
+          "id": "8aa450f0-bad1-5420-821f-781eecba1afe",
+          "value": "2,30",
+          "label": "2,30 €",
+          "position": 4
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "b593d6d9-3edd-5882-a046-755825dd9af1",
+      "exercise_id": "ce683d5e-aad7-545e-9673-fb7de6d00327",
+      "position": 4,
+      "prompt": "Le prix du litre de diesel sera :",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "9c08474c-4ae2-534b-af5a-17b9a71249c7",
+          "value": "0,80",
+          "label": "0,80 €",
+          "position": 1
+        },
+        {
+          "id": "b9561581-f2e0-503c-8bed-ae22164fbadf",
+          "value": "0,90",
+          "label": "0,90 €",
+          "position": 2
+        },
+        {
+          "id": "b7615d5c-d31f-54f3-8e4b-aef2af2b06be",
+          "value": "1,50",
+          "label": "1,50 €",
+          "position": 3
+        },
+        {
+          "id": "1b9c9c24-fec8-5c25-a904-689af23268f9",
+          "value": "2,00",
+          "label": "2,00 €",
+          "position": 4
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "81dfabee-e8fb-5043-a634-7c6b98571507",
+      "exercise_id": "bf71a612-7fe4-5572-8fcc-a433f9819ce3",
+      "position": 1,
+      "prompt": "La conversation a déjà commencé.",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "a642e194-cdf8-510e-ae79-4285346be308",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "66077a9b-02c2-5f0c-922e-c3cd85c41599",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        },
+        {
+          "id": "00142add-2cbc-5132-8918-2b6e1f713968",
+          "value": "inconnu",
+          "label": "On ne sait pas",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "5becfd44-98d6-52ba-b8ba-c3b31b15452e",
+      "exercise_id": "bf71a612-7fe4-5572-8fcc-a433f9819ce3",
+      "position": 2,
+      "prompt": "Monsieur Leblanc a fait une erreur dans sa commande.",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "540fc930-6691-5c79-9853-716ad2adb6e3",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "78e35cc8-db03-5109-be2f-5b4ea07c2260",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        },
+        {
+          "id": "f5e18493-4acd-5ad4-b5ef-52fe5667999e",
+          "value": "inconnu",
+          "label": "On ne sait pas",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "831e098c-ade5-5d53-8497-443b98d4a46d",
+      "exercise_id": "bf71a612-7fe4-5572-8fcc-a433f9819ce3",
+      "position": 3,
+      "prompt": "Monsieur Leblanc veut une machine à laver de 5 kilos.",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "39a0c3ef-d047-582f-9b5c-c503ce30e4d8",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "a1d29736-4053-53de-aa33-87b39a66d46d",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        },
+        {
+          "id": "fa670af4-70a8-5b46-be69-90ac83846a5d",
+          "value": "inconnu",
+          "label": "On ne sait pas",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "a0f0cf6a-d246-524a-874f-9102931084f5",
+      "exercise_id": "bf71a612-7fe4-5572-8fcc-a433f9819ce3",
+      "position": 4,
+      "prompt": "Monsieur Leblanc vend aussi des machines séchantes.",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "abc21a36-f1d3-527e-9605-57bc45a27efe",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "3adfd8ab-6d70-5355-81a5-44c29dd11488",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        },
+        {
+          "id": "0b2022a5-006c-591f-bfe4-4bbe6d390136",
+          "value": "inconnu",
+          "label": "On ne sait pas",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "60f321aa-4b80-5639-aca8-6fe9d0fc72aa",
+      "exercise_id": "bf71a612-7fe4-5572-8fcc-a433f9819ce3",
+      "position": 5,
+      "prompt": "Le magasin de monsieur Leblanc est à Paris.",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "cbe5a8d3-2b8a-5ece-844a-e35e982a3170",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "d5d2ac19-7985-55dd-ab6d-f4fb3f6d432f",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        },
+        {
+          "id": "a5ebd50e-b48f-5b13-bcb7-a3553832333c",
+          "value": "inconnu",
+          "label": "On ne sait pas",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "015b857e-f042-5c0e-8b1a-8edc68f9061a",
+      "exercise_id": "bf71a612-7fe4-5572-8fcc-a433f9819ce3",
+      "position": 6,
+      "prompt": "La nouvelle machine va arriver avant un mois.",
+      "points": 2,
+      "type": "single",
+      "options": [
+        {
+          "id": "535644d1-8676-5f49-8c34-17ae67633a20",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "3a670d87-1aa0-554e-aa38-dab0a4a048af",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        },
+        {
+          "id": "c38e5db2-2789-567e-89aa-2a6d49e0caa0",
+          "value": "inconnu",
+          "label": "On ne sait pas",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "44018202-51c5-54f4-8016-6fd3215a63dd",
+      "exercise_id": "fe32875a-ab53-5e15-8ffe-ce9600f8109f",
+      "position": 1,
+      "prompt": "On ne doit pas conduire vite ici.",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "9cac8987-0a9a-5069-ad5f-cad4afd81f55",
+          "value": "A",
+          "label": "A",
+          "position": 1
+        },
+        {
+          "id": "fbe8b225-16b9-5529-a393-bc4948457d2a",
+          "value": "B",
+          "label": "B",
+          "position": 2
+        },
+        {
+          "id": "f506aed4-3518-5074-ad06-0c45a0fc735c",
+          "value": "C",
+          "label": "C",
+          "position": 3
+        },
+        {
+          "id": "cb85c03f-58a5-52e2-ad64-9ffda65fb3bb",
+          "value": "D",
+          "label": "D",
+          "position": 4
+        },
+        {
+          "id": "54739dcc-c11f-503a-bed9-189d21282d36",
+          "value": "E",
+          "label": "E",
+          "position": 5
+        },
+        {
+          "id": "c6c208c0-a189-5b75-83b7-f0c648b6411e",
+          "value": "F",
+          "label": "F",
+          "position": 6
+        },
+        {
+          "id": "6e67d5f3-362c-5f5e-ae38-619d141ad836",
+          "value": "G",
+          "label": "G",
+          "position": 7
+        },
+        {
+          "id": "fd7b8934-c4ff-57eb-8e2f-13f943a205ee",
+          "value": "H",
+          "label": "H",
+          "position": 8
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "4daf3ee1-c7dc-573f-9d21-190e4d6937e1",
+      "exercise_id": "fe32875a-ab53-5e15-8ffe-ce9600f8109f",
+      "position": 2,
+      "prompt": "On peut jouer au foot ici en fin de journée.",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "4129a5e4-b08d-54ef-88a9-10a649f1f532",
+          "value": "A",
+          "label": "A",
+          "position": 1
+        },
+        {
+          "id": "159a40ba-9904-52ce-b2c9-69872da9b1f5",
+          "value": "B",
+          "label": "B",
+          "position": 2
+        },
+        {
+          "id": "42537205-1611-5d38-aee3-cba83771059a",
+          "value": "C",
+          "label": "C",
+          "position": 3
+        },
+        {
+          "id": "a94938bb-36af-5caa-b6bc-4ecf1927b973",
+          "value": "D",
+          "label": "D",
+          "position": 4
+        },
+        {
+          "id": "edbda461-3b96-50b2-ae9a-38f6a8e98267",
+          "value": "E",
+          "label": "E",
+          "position": 5
+        },
+        {
+          "id": "4133ac42-fda6-5eb4-b298-f1d615710706",
+          "value": "F",
+          "label": "F",
+          "position": 6
+        },
+        {
+          "id": "caaadb5b-5110-5378-aa47-65fba4eb6bec",
+          "value": "G",
+          "label": "G",
+          "position": 7
+        },
+        {
+          "id": "631c3ca8-6e67-5d1f-ad68-29ee92e23eb2",
+          "value": "H",
+          "label": "H",
+          "position": 8
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "6931c63a-de37-5b6e-82d6-8290a5b50643",
+      "exercise_id": "fe32875a-ab53-5e15-8ffe-ce9600f8109f",
+      "position": 3,
+      "prompt": "Il faut acheter aujourd’hui. C’est moins cher.",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "2571f9b3-ec86-5b31-a320-499a769a2003",
+          "value": "A",
+          "label": "A",
+          "position": 1
+        },
+        {
+          "id": "0c6769a8-19c3-526f-bc47-08de29db117f",
+          "value": "B",
+          "label": "B",
+          "position": 2
+        },
+        {
+          "id": "4a61b1c1-7ba6-5703-9964-a58d55ece31c",
+          "value": "C",
+          "label": "C",
+          "position": 3
+        },
+        {
+          "id": "073abd68-95b1-5b7b-a58e-a2e094f01921",
+          "value": "D",
+          "label": "D",
+          "position": 4
+        },
+        {
+          "id": "9f90ed6c-85cc-53bd-98a8-1ce6d2f50895",
+          "value": "E",
+          "label": "E",
+          "position": 5
+        },
+        {
+          "id": "99922b8c-3b0c-5260-85da-a8f8be683a8e",
+          "value": "F",
+          "label": "F",
+          "position": 6
+        },
+        {
+          "id": "b554f15c-5d4c-56a9-90f1-32f7e8b44f01",
+          "value": "G",
+          "label": "G",
+          "position": 7
+        },
+        {
+          "id": "f1b402d4-06ca-57f9-af70-c8b4e8185268",
+          "value": "H",
+          "label": "H",
+          "position": 8
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "5cc486a9-5cca-5b6a-97e2-d096f398b597",
+      "exercise_id": "fe32875a-ab53-5e15-8ffe-ce9600f8109f",
+      "position": 4,
+      "prompt": "On ne peut pas venir nager en famille tôt le matin.",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "996d1072-710c-5e2a-a988-e72c9cb29335",
+          "value": "A",
+          "label": "A",
+          "position": 1
+        },
+        {
+          "id": "3c23bdc1-5c06-5c55-8805-bec588706f37",
+          "value": "B",
+          "label": "B",
+          "position": 2
+        },
+        {
+          "id": "f1f25fcf-c559-52a1-bca8-d5364b365abf",
+          "value": "C",
+          "label": "C",
+          "position": 3
+        },
+        {
+          "id": "d856d542-ca2e-5b2f-b085-6d3f7e023efa",
+          "value": "D",
+          "label": "D",
+          "position": 4
+        },
+        {
+          "id": "5d2a5d07-2123-52a8-a4b5-132b4e7e808d",
+          "value": "E",
+          "label": "E",
+          "position": 5
+        },
+        {
+          "id": "caa2613c-58f5-5e1d-a6a3-c1a94772277d",
+          "value": "F",
+          "label": "F",
+          "position": 6
+        },
+        {
+          "id": "f8047cfa-e8f6-5d09-a929-fc1c4df6ed5d",
+          "value": "G",
+          "label": "G",
+          "position": 7
+        },
+        {
+          "id": "80aa4810-a79c-546a-89d8-065d0f0d2d85",
+          "value": "H",
+          "label": "H",
+          "position": 8
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "76208983-6eb0-5a57-9f99-7fd75ddd7150",
+      "exercise_id": "fe32875a-ab53-5e15-8ffe-ce9600f8109f",
+      "position": 5,
+      "prompt": "On ne peut pas stationner ici.",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "2803fc9e-7018-5f4b-8ad7-07bb33962309",
+          "value": "A",
+          "label": "A",
+          "position": 1
+        },
+        {
+          "id": "6b59b405-6a44-5803-9c6c-7123133302ad",
+          "value": "B",
+          "label": "B",
+          "position": 2
+        },
+        {
+          "id": "f2bb6b0c-c7e3-5e01-a826-8dacc1be37b0",
+          "value": "C",
+          "label": "C",
+          "position": 3
+        },
+        {
+          "id": "53237601-bab7-526e-937c-8d7a99b1e452",
+          "value": "D",
+          "label": "D",
+          "position": 4
+        },
+        {
+          "id": "1c0b98d2-ddb2-5e4a-b334-02870040ce8c",
+          "value": "E",
+          "label": "E",
+          "position": 5
+        },
+        {
+          "id": "aea83c64-c05e-5936-a40c-29fda4c276b9",
+          "value": "F",
+          "label": "F",
+          "position": 6
+        },
+        {
+          "id": "37c979aa-b254-5169-b9b6-4fe165421c78",
+          "value": "G",
+          "label": "G",
+          "position": 7
+        },
+        {
+          "id": "e8c9efad-5ef0-548b-b1c4-d0155f5af78c",
+          "value": "H",
+          "label": "H",
+          "position": 8
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "bc917b04-f85f-5eae-a0cf-133b96fe7781",
+      "exercise_id": "f92e4797-7d82-5719-8599-20d537fbac29",
+      "position": 1,
+      "prompt": "Politique",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "ec7aa71c-1c72-5506-8a41-dac76672c27c",
+          "value": "1",
+          "label": "1",
+          "position": 1
+        },
+        {
+          "id": "de6205ca-5ddd-54b4-8d99-9c3a915c865a",
+          "value": "2",
+          "label": "2",
+          "position": 2
+        },
+        {
+          "id": "5a9241a4-349b-58ac-9c63-63c3cce9c684",
+          "value": "3",
+          "label": "3",
+          "position": 3
+        },
+        {
+          "id": "3fa55aba-2b7d-54af-bee6-2b554e37cab0",
+          "value": "4",
+          "label": "4",
+          "position": 4
+        },
+        {
+          "id": "d1a25958-0e8c-5ea3-8584-c2c5b782de32",
+          "value": "5",
+          "label": "5",
+          "position": 5
+        },
+        {
+          "id": "59dc3c1d-c430-512c-b560-3a1d6365100c",
+          "value": "6",
+          "label": "6",
+          "position": 6
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "74bcd2bd-0895-52dd-8e97-c8a99038d5bb",
+      "exercise_id": "f92e4797-7d82-5719-8599-20d537fbac29",
+      "position": 2,
+      "prompt": "Culture",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "2c075765-beda-51b6-8de5-251723d63abc",
+          "value": "1",
+          "label": "1",
+          "position": 1
+        },
+        {
+          "id": "b229d695-a730-5132-82bb-7276134cb5a8",
+          "value": "2",
+          "label": "2",
+          "position": 2
+        },
+        {
+          "id": "f7ebeabc-532f-5f45-a515-34fcbe9adb0a",
+          "value": "3",
+          "label": "3",
+          "position": 3
+        },
+        {
+          "id": "cbe7d508-d9a7-5b70-add3-d0f555a86143",
+          "value": "4",
+          "label": "4",
+          "position": 4
+        },
+        {
+          "id": "b0dd2c6a-3e0b-588d-931e-1e0da6274c60",
+          "value": "5",
+          "label": "5",
+          "position": 5
+        },
+        {
+          "id": "3748208f-a63d-5e4d-a1b9-25f8494f24d3",
+          "value": "6",
+          "label": "6",
+          "position": 6
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "7b3b9237-eb17-5973-9b6b-ce5d3963720d",
+      "exercise_id": "f92e4797-7d82-5719-8599-20d537fbac29",
+      "position": 3,
+      "prompt": "Société",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "c1030104-9223-59b1-ae17-d07433aed929",
+          "value": "1",
+          "label": "1",
+          "position": 1
+        },
+        {
+          "id": "753f2b35-17ce-53a1-a231-6e221e2f8016",
+          "value": "2",
+          "label": "2",
+          "position": 2
+        },
+        {
+          "id": "93f45457-45ab-5bb6-8df4-f6dbeeb052bb",
+          "value": "3",
+          "label": "3",
+          "position": 3
+        },
+        {
+          "id": "c94be8d3-ba03-5e60-b8ec-52c28745d473",
+          "value": "4",
+          "label": "4",
+          "position": 4
+        },
+        {
+          "id": "6f351d92-85ec-557d-9862-dc3e976b7196",
+          "value": "5",
+          "label": "5",
+          "position": 5
+        },
+        {
+          "id": "873595a9-029c-51c0-b210-c4ce24a5be0e",
+          "value": "6",
+          "label": "6",
+          "position": 6
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "0be00c4f-d76d-5b61-9967-23dfc7e05981",
+      "exercise_id": "f92e4797-7d82-5719-8599-20d537fbac29",
+      "position": 4,
+      "prompt": "Sciences",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "3999af31-431a-5aae-8a4e-2af6320fa4de",
+          "value": "1",
+          "label": "1",
+          "position": 1
+        },
+        {
+          "id": "226c9431-9dcd-5345-981e-cc5069b54955",
+          "value": "2",
+          "label": "2",
+          "position": 2
+        },
+        {
+          "id": "8040643f-0306-5ee3-ade1-90ab9684a368",
+          "value": "3",
+          "label": "3",
+          "position": 3
+        },
+        {
+          "id": "423ab9a8-9667-5735-8c66-2bd5732ce898",
+          "value": "4",
+          "label": "4",
+          "position": 4
+        },
+        {
+          "id": "abd17b19-7dfd-5bf9-b820-e2f9abc60409",
+          "value": "5",
+          "label": "5",
+          "position": 5
+        },
+        {
+          "id": "767468f8-d32a-54c5-ab43-64c80e615b56",
+          "value": "6",
+          "label": "6",
+          "position": 6
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "6fdb787b-77e5-55c2-9838-d4119523a7b1",
+      "exercise_id": "f92e4797-7d82-5719-8599-20d537fbac29",
+      "position": 5,
+      "prompt": "Sports",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "a8ba7558-b9f0-5b51-bb16-9e182528d019",
+          "value": "1",
+          "label": "1",
+          "position": 1
+        },
+        {
+          "id": "2101ee82-8e15-577e-a63f-e371e552d597",
+          "value": "2",
+          "label": "2",
+          "position": 2
+        },
+        {
+          "id": "9bf54a2f-ae9a-5fb1-a364-c2d9164ea3f8",
+          "value": "3",
+          "label": "3",
+          "position": 3
+        },
+        {
+          "id": "1598a868-66d2-5178-a56c-aa847d78842c",
+          "value": "4",
+          "label": "4",
+          "position": 4
+        },
+        {
+          "id": "f44c321c-5cdd-5acb-a288-d972cf41291d",
+          "value": "5",
+          "label": "5",
+          "position": 5
+        },
+        {
+          "id": "30bb3c6f-c7a7-502a-9fa3-95ff9f549a30",
+          "value": "6",
+          "label": "6",
+          "position": 6
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "1a242166-1810-5ec8-b23c-86a9a1cb614a",
+      "exercise_id": "f92e4797-7d82-5719-8599-20d537fbac29",
+      "position": 6,
+      "prompt": "Économie",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "fbac7555-c92c-531a-a9e8-a1b1e8a42c4e",
+          "value": "1",
+          "label": "1",
+          "position": 1
+        },
+        {
+          "id": "16cc2934-ba40-5405-a933-82ab58063b1c",
+          "value": "2",
+          "label": "2",
+          "position": 2
+        },
+        {
+          "id": "6d25d239-04e0-5f79-8905-a34b6f96529d",
+          "value": "3",
+          "label": "3",
+          "position": 3
+        },
+        {
+          "id": "1f1510e3-2519-579d-9f1f-750ed8125ec9",
+          "value": "4",
+          "label": "4",
+          "position": 4
+        },
+        {
+          "id": "a0bedabd-07aa-5d4e-b2d3-144c39fb8240",
+          "value": "5",
+          "label": "5",
+          "position": 5
+        },
+        {
+          "id": "71c238fb-2288-55aa-a337-1d67832317de",
+          "value": "6",
+          "label": "6",
+          "position": 6
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "64fb36cf-64d9-529d-aad1-734f1dff3d16",
+      "exercise_id": "4905fa7e-8e61-57cc-ae1c-c272e3ffa874",
+      "position": 1,
+      "prompt": "Ce texte vient :",
+      "points": 0.5,
+      "type": "single",
+      "options": [
+        {
+          "id": "98e31995-70b5-548f-9d97-3439a3707392",
+          "value": "1",
+          "label": "d’un journal.",
+          "position": 1
+        },
+        {
+          "id": "c9ef20fb-4573-5cae-8213-1ac0aa7f923e",
+          "value": "2",
+          "label": "d’une brochure touristique.",
+          "position": 2
+        },
+        {
+          "id": "a96733b7-ec8f-559f-8f1e-9ec4648f09e0",
+          "value": "3",
+          "label": "d’un livre.",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "b7167e18-8b2f-5b00-b037-4950ee0b1a19",
+      "exercise_id": "4905fa7e-8e61-57cc-ae1c-c272e3ffa874",
+      "position": 2,
+      "prompt": "Les touristes sont attirés à Visan par :",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "68c4dedd-3026-5f76-ac93-5ae16ae603a6",
+          "value": "1",
+          "label": "son architecture.",
+          "position": 1
+        },
+        {
+          "id": "8af4b106-9c8f-54b1-8dca-172204375372",
+          "value": "2",
+          "label": "ses produits fermiers.",
+          "position": 2
+        },
+        {
+          "id": "e3892cde-145d-5c1d-96aa-2136244fc532",
+          "value": "3",
+          "label": "une émission de télévision.",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "4385ef4c-069d-547c-bf92-e9eee476152a",
+      "exercise_id": "4905fa7e-8e61-57cc-ae1c-c272e3ffa874",
+      "position": 3,
+      "prompt": "« La ferme » est un documentaire sur la vie des paysans.",
+      "points": 1.5,
+      "type": "choice_justification",
+      "options": [
+        {
+          "id": "0fadee58-679d-5380-9ec2-c73313902ae7",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "0ae8d875-f2b4-5cbc-ab2b-c2bbe6ebd7cb",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "420dfda9-7b5c-59d5-955b-be2519f1401e",
+      "exercise_id": "4905fa7e-8e61-57cc-ae1c-c272e3ffa874",
+      "position": 4,
+      "prompt": "Visan n’a jamais eu autant de visiteurs.",
+      "points": 1.5,
+      "type": "choice_justification",
+      "options": [
+        {
+          "id": "a18133d2-d941-5443-b590-2b150663ce5d",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "8e098621-f6b6-51f8-a15b-f0eb03c6795b",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "1b59d01a-7779-559e-968a-6eef75775ef5",
+      "exercise_id": "4905fa7e-8e61-57cc-ae1c-c272e3ffa874",
+      "position": 5,
+      "prompt": "Les habitants de Visan sont tous contents de la présence de TF1.",
+      "points": 1.5,
+      "type": "choice_justification",
+      "options": [
+        {
+          "id": "eb871ebb-f255-5668-b702-ace431a2fd8f",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "bdd656b0-db70-5637-a0a8-90f15f55d79b",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "97699c55-4d61-5db6-b90e-ec5fb8c14b68",
+      "exercise_id": "4905fa7e-8e61-57cc-ae1c-c272e3ffa874",
+      "position": 6,
+      "prompt": "La boulangère est heureuse de vendre davantage de pain.",
+      "points": 1.5,
+      "type": "choice_justification",
+      "options": [
+        {
+          "id": "aec0355d-4fb4-5b94-8779-de813a987b63",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "5e160021-87cd-5f5a-b54c-8cb2e7d36bdb",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "054f172e-18d3-5b45-8ab8-e0d28c8efb7e",
+      "exercise_id": "4905fa7e-8e61-57cc-ae1c-c272e3ffa874",
+      "position": 7,
+      "prompt": "Les journalistes contribuent à donner une bonne image de Visan.",
+      "points": 1.5,
+      "type": "choice_justification",
+      "options": [
+        {
+          "id": "8502d8c8-6bcf-5a8c-83bb-0d7554855879",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "f23e39a9-da6f-5baf-a34d-4738eb6805ec",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "f34d3933-ef65-553c-aac4-f06bbf3720c0",
+      "exercise_id": "b209b726-c929-5cbb-b8ad-95abf7c5c5b2",
+      "position": 1,
+      "prompt": "Il s’agit :",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "af6887bb-4d5b-5bdd-b148-4ce703553d06",
+          "value": "1",
+          "label": "d’un message publicitaire.",
+          "position": 1
+        },
+        {
+          "id": "7f7072a5-74b1-5372-8480-12c022a57592",
+          "value": "2",
+          "label": "d’une lettre amicale.",
+          "position": 2
+        },
+        {
+          "id": "85c0c126-7c5a-5d79-ab71-d310551043d7",
+          "value": "3",
+          "label": "d’un article de presse.",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "209277ce-2aee-5ec6-bb06-4fe623607ade",
+      "exercise_id": "b209b726-c929-5cbb-b8ad-95abf7c5c5b2",
+      "position": 2,
+      "prompt": "« Aventure Globale » est le nom :",
+      "points": 1,
+      "type": "single",
+      "options": [
+        {
+          "id": "153ea509-65bb-5f58-90bf-d51626533896",
+          "value": "1",
+          "label": "d’un film.",
+          "position": 1
+        },
+        {
+          "id": "719d593e-b5c1-5db1-8782-2343b5ef3c77",
+          "value": "2",
+          "label": "d’un bateau.",
+          "position": 2
+        },
+        {
+          "id": "3978f73f-adf0-5bcd-b256-86b789a1868f",
+          "value": "3",
+          "label": "d’une agence de voyages.",
+          "position": 3
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "4971909a-2fe7-5eb3-a121-c1bc89ad5136",
+      "exercise_id": "b209b726-c929-5cbb-b8ad-95abf7c5c5b2",
+      "position": 3,
+      "prompt": "Si vous cliquez à l’emplacement indiqué, que va-t-on vous envoyer ?",
+      "points": 1.5,
+      "type": "short",
+      "options": [],
+      "image_path": null
+    },
+    {
+      "id": "e71b6ec0-98c5-5f16-a663-493455579635",
+      "exercise_id": "b209b726-c929-5cbb-b8ad-95abf7c5c5b2",
+      "position": 4,
+      "prompt": "On peut gagner un voyage gratuit :",
+      "points": 1.5,
+      "type": "choice_justification",
+      "options": [
+        {
+          "id": "bdee30cd-fc06-5dd8-bc89-45b86aecd787",
+          "value": "vrai",
+          "label": "Vrai",
+          "position": 1
+        },
+        {
+          "id": "951b6064-5be0-5326-821a-5c3d06935db8",
+          "value": "faux",
+          "label": "Faux",
+          "position": 2
+        }
+      ],
+      "image_path": null
+    },
+    {
+      "id": "20f1e1c0-bcb8-5cd9-8e36-31109b768d65",
+      "exercise_id": "2b5577f9-4d2c-537b-ad4d-b4be091b2977",
+      "position": 1,
+      "prompt": "Vous avez fait un voyage d’une semaine à Paris. Vous racontez dans votre journal personnel ce que vous avez fait, jour après jour. Vous parlez de vos impressions sur la vie à Paris. Écrivez un texte de 60 à 80 mots.",
+      "points": 13,
+      "type": "writing",
+      "options": [],
+      "image_path": null
+    },
+    {
+      "id": "614b3288-9049-5aca-9fd9-ace74cb8c55c",
+      "exercise_id": "bbb31069-fdf2-5641-851c-448a96be7613",
+      "position": 1,
+      "prompt": "Vous avez reçu cette lettre. Vous répondez à Philippe : vous le remerciez mais vous ne pouvez pas accepter son invitation ; vous expliquez pourquoi et vous lui proposez autre chose. (60 à 80 mots)",
+      "points": 12,
+      "type": "writing",
+      "options": [],
+      "image_path": null
+    }
+  ],
+  "audio_assets": [
+    {
+      "id": "a11279fb-0725-5516-8685-459d24d329b8",
+      "exercise_id": "8c86d69a-850c-5f5f-82e1-dd02c805b4c4",
+      "storage_path": "exercice-1.mp3",
+      "local_path": "assets/audio/exercice-1.mp3",
+      "duration_seconds": 61.231,
+      "max_plays": 2
+    },
+    {
+      "id": "46c51106-dbbb-52c9-8124-9f6801bdb001",
+      "exercise_id": "ce683d5e-aad7-545e-9673-fb7de6d00327",
+      "storage_path": "exercice-2.mp3",
+      "local_path": "assets/audio/exercice-2.mp3",
+      "duration_seconds": 22.857,
+      "max_plays": 2
+    },
+    {
+      "id": "1afa8661-b6f0-5cbe-9560-63a2253ea731",
+      "exercise_id": "bf71a612-7fe4-5572-8fcc-a433f9819ce3",
+      "storage_path": "exercice-3.mp3",
+      "local_path": "assets/audio/exercice-3.mp3",
+      "duration_seconds": 51.931,
+      "max_plays": 2
+    }
+  ],
+  "writing_rubrics": {
+    "1": [
+      [
+        "respect_consignes",
+        "Respect de la consigne",
+        1
+      ],
+      [
+        "raconter_decrire",
+        "Capacité à raconter et à décrire",
+        4
+      ],
+      [
+        "impressions",
+        "Capacité à donner ses impressions",
+        2
+      ],
+      [
+        "lexique",
+        "Lexique / orthographe lexicale",
+        2
+      ],
+      [
+        "grammaire",
+        "Morphosyntaxe / orthographe grammaticale",
+        2.5
+      ],
+      [
+        "coherence",
+        "Cohérence et cohésion",
+        1.5
+      ]
+    ],
+    "2": [
+      [
+        "respect_consignes",
+        "Respect de la consigne",
+        1
+      ],
+      [
+        "sociolinguistique",
+        "Correction sociolinguistique",
+        1
+      ],
+      [
+        "interaction",
+        "Capacité à interagir",
+        4
+      ],
+      [
+        "lexique",
+        "Lexique / orthographe lexicale",
+        2
+      ],
+      [
+        "grammaire",
+        "Morphosyntaxe / orthographe grammaticale",
+        2.5
+      ],
+      [
+        "coherence",
+        "Cohérence et cohésion",
+        1.5
+      ]
+    ]
+  }
+}

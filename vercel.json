@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "framework": null,
+  "buildCommand": "echo Static assets are prebuilt",
+  "installCommand": "echo No runtime install required",
+  "outputDirectory": "public"
+}

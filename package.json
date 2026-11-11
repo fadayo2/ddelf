@@ -1,0 +1,13 @@
+{
+  "name": "delfa2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DELF A2 training and timed simulation with Supabase",
+  "scripts": {
+    "test": "node --test tests/content.test.mjs",
+    "build:css": "node scripts/build-tailwind.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "4.1.10"
+  }
+}
